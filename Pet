@@ -1,0 +1,84 @@
+package sample;
+public class Pet{
+    String nome;
+    int idade;
+    int saciedade;
+    int limpeza;
+    int diamante;
+    int energia;
+    int saciedademax;
+    int limpezamax;
+    int energiamax;
+    boolean vivo;
+    public Pet  (int saciedade, int limpeza, int energia,String nome){
+        this.saciedade=saciedade;
+        this.saciedademax= saciedade;
+        this.limpeza=limpeza;
+        this.limpezamax=limpeza;
+        this.energia=energia;
+        this.energiamax=energia;
+        this.idade=0;
+        this.diamante=0;
+        this.nome=nome;
+        this.vivo=true;
+    }
+    public void mostrar(){
+        System.out.println("S: " + saciedade+ "/" +saciedademax+ ", L: " + limpeza + "/"+ limpezamax + ",E: " + energia + "/" + energiamax +",I: " + idade + ",D: " + diamante );
+    }
+    public void brincar(){
+        if(vivo) {
+            this.idade += 1;
+            this.diamante += 1;
+            this.limpeza -= 3;
+            this.energia -= 2;
+            this.saciedade -= 1;
+            if(limpeza<=0 || energia <= 0 || saciedade<=0){
+                vivo = false;
+                System.out.println("Fail: O pet morreu de tanto brincar.");
+            }
+        }else{
+            System.out.println("Fail: O pet esta morto.");
+        }
+    }
+    public void tomarbanho(){
+        if(vivo) {
+            this.idade += 2;
+            this.energia -= 3;
+            this.saciedade -= 1;
+            this.limpeza = limpezamax;
+            if(energia<=0 || saciedade <=0){
+                vivo = false;
+                System.out.println("Fail: O pet morreu de tanto tomar banho.");
+            }
+        }else{
+            System.out.println("Fail: O pet esta morto.");
+        }
+    }
+    public void dormir() {
+        if (vivo) {
+            if (energiamax - energia == 5) {
+                this.energia = energiamax;
+                this.idade++;
+            }
+        }else{
+            System.out.println("Fail: O pet esta morto.");
+        }
+    }
+    public void comer(){
+        if(vivo){
+            this.energia -=1;
+            this.saciedade +=4;
+            this.limpeza -=2;
+            this.idade +=1;
+            if(energia<=0 || limpeza<=0) {
+                vivo = false;
+                System.out.println("Fail: O pet morreu de tanto comer.");
+            }
+        }else{
+            System.out.println("Fail: O pet esta morto.");
+        }
+    }
+
+}
+
+

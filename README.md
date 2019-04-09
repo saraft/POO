@@ -1,6 +1,5 @@
 # poo1-Carro
 O que você fez?
-Fiz o código do carro em python,criei uma classe para iniciar o carro,e funções para mostrar, abastecer,entre outras.
 Com quem e como você fez?
 Com a ajuda de um amigo,criei uma classe para iniciar o carro e criei funções para mostrar,abastecer,mostrar,entrar e sair. 
 O que aprendeu e sabe fazer?
@@ -20,9 +19,8 @@ Quanto tempo levou pra fazer a atividade?
 
 01 - Carro
 O que você fez
-fiz bla bla bla
+Fiz o código do carro em python,criei uma classe para iniciar o carro,e funções para mostrar, abastecer,entre outras.
 Com quem e como você fez
-fiz bla bla bla
 O que aprendeu e sabe fazer
 O que tem dificuldade ainda
 Quanto tempo levou pra fazer a atividade

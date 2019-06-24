@@ -1,0 +1,25 @@
+public class Cliente{
+     public String id;
+     public String fone;
+     public class Cliente(String id , String fone){
+         this.id = id;
+         this.fone = fone;
+    }
+}
+class Sala de cinema{
+    ArrayList<Cliente>cadeiras;
+    public sala de cinema(int capacidade);
+        cadeiras = new ArrayList<Cliente>();
+        for(int i = 0; i<capacidade ; i++)
+            cadeiras.add(null);
+}
+ public String toString(){
+    for(Cliente cliente: cadeiras){
+        System.out.println(cliente);
+    }
+ }
+public class Controller{
+    public static void main(String[]args){
+        sala de cinema = new sala de cinema(capacidade = 0);
+    }
+}

@@ -1,0 +1,67 @@
+public class Cliente {
+    String id;
+    String nome;
+    float saldo;
+}
+public Cliente(String id, String nome){
+    this.id = id;
+    this.nome = nome;
+    this.saldo = float;
+}
+public String toString() {
+    String var1 = this.id;
+    String var2 = this.nome;
+    return this.saldo;
+}
+public class Transacao {
+    int id;
+    float valor;
+    String Clienteid;
+
+public Transacao(int id, float valor, String Clienteid){
+    this.id = id;
+    this.valor = valor;
+    this.Clienteid = Clienteid;
+}
+public String toString(){
+    int var1 = this.id;
+    float var2 = this.valor;
+        return this.Clienteid;
+}
+    }
+    public class Sistema {
+    float dinheiro;
+    ArrayList<Clientes> clientes;
+    ArrayList<Transacao> transacao;
+    int nextTrId;
+    }
+    public Sistema(float saldo){
+    this.saldo = saldo;
+    this.clientes = new ArrayList ();
+    this.transacoes = new ArrayList ();
+    this.nextTrId = 0;
+}
+
+ public void cadastrar(Cliente cliente) {
+     try {
+         this.encontrarcliente(cliente.id);
+         this.clientes.adicionar(cliente);
+     }
+ }
+  Cliente encontrarcliente(String id){
+    this.cliente = new cliente;
+  }
+  public void  addTransacao(float valor, String clienteId) {
+        this.transacoes.add(new Transacao(this.nextTrId, valor, clienteId));
+          +=this.nextTrId;
+        }
+  public void receber(String id, float saldo){
+    Cliente cliente = this.encontrarcliente(id);
+    if (cliente < saldo){
+        System.out.println('falha:pagamento superior ao que o cliente deve');
+    }else{
+        this.addtransacao (saldo,id);
+        cliente.saldo = saldo;
+        this.saldo +=saldo;
+    }
+        }
